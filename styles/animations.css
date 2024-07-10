@@ -40,9 +40,8 @@
     transition: fill 0.3s linear;
 }
 
-
-@keyframes animation_arrow {
-    from {
+@keyframes animation__arrow{
+    from{
         transform: translateX(0px);
     }
     to {
@@ -60,12 +59,11 @@
     }
 }
 
-@keyframes animation_heart {
-    from {
+@keyframes animation_icon {
+    from{
         transform: scale(1);
     }
-
-    to {
+    to{
         transform: scale(1.5);
     }
 }
@@ -96,7 +94,7 @@
 }
 
 .like-icon.is-liked {
-    animation: animation_heart 0.3s ease-in 0.1s normal;
+    animation: animation_icon 0.3s ease-in 0.1s normal;
     animation-delay: 0.1s;
     animation-direction: alternate;
 }

@@ -87,7 +87,7 @@
   opacity: 0.6;
   inset-inline-start: -15px;
   inset-block-start: 0px;
-  animation: animation_arrow 0.5s infinite alternate ease-in-out;
+  animation:animation__arrow 0.5s infinite alternate ease-in-out;
 }
 
 .theme-menu__button:active{
@@ -334,6 +334,7 @@
 .footer__button-close{
   width: 100%;
   margin-top: 30px;
+  padding: 12.5px 0;
   background-color: var(--main-color);
   border: 1px solid var(--main-text-color);
 }

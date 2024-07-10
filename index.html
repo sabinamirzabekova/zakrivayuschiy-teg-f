@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/headicon.svg" sizes="any">
+    <link rel="icon" href="/svg/headicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -304,29 +306,32 @@
       </section>
     </main>
     <footer class="footer">
-      <button class="footer__button button"     type="button" 
-      onclick="window['dialog-id'].show()" 
+      <button class="footer__button button"     
+      type="button" 
+      onclick="window['dialog-id'].showModal();" 
       aria-controls="dialog-id">
       <svg with="21" hight="21" viewBox="0 0 21 21" class="floppy" fill="none" xmlns="http://www.w3.org/2000/svg">
         <use href="./svg/floppy.svg#floppy" ></use>
       </svg>
         <span class="footer__button-text">Сохранить на память</span>
       </button>
+
       <div class="dialog__footer">
       <dialog id="dialog-id" class="dialog">
-        <form method="dialog">
           <div class="dialog__svg">
             <svg width="21" height="21" viewBox="0 0 21 21" class="floppy" fill="none" xmlns="http://www.w3.org/2000/svg" class="floopy">
               <use href="./svg/floppy.svg#floppy"></use>
             </svg>
             <p class="button__text footer__button-text">Вставьте дискету, чтобы продолжить</p>
           </div>
-          <button class="footer__button-close button" 
+          <form class="diaalog">
+          <button class=" button footer__button-close" 
             type="submit" 
-            onclick="window['dialog-id'].closeModal()"> 
+            onclick="window['dialog-id'].closeModal()"
+            aria-controls="dialog-id"> 
             <span class="button__text ">ок</span>
+            </form>
         </button>
-      </form>
       </dialog>
     </div>
     </footer>
