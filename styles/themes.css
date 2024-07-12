@@ -10,6 +10,7 @@
     --floppy-color: #000;
     --sparks: red;
     --button-text-color: #00cc14;
+    --like-heart-color: red;
     --contour: #00cc14; 
     --core-hover: #00cc14;
     --font-family: "Press Start 2P";
@@ -24,7 +25,7 @@
         #000 0 2px,
         transparent 2px 4px
     ), 
-    linear-gradient(180deg, #007f0c 0%, #004306 100%), url("path_to_image");
+    linear-gradient(180deg, #007f0c 0%, #004306 100%);
 }
 
 
@@ -34,6 +35,7 @@
     --floppy-color: #000;
     --sparks: red;
     --core-hover: #000;
+    --like-heart-color: red;
     --contour: #000;
     --button-text-color: #fff;
     --font-family: "Press Start 2P";
@@ -48,5 +50,59 @@
         #a1a1a1 0 2px,
         transparent 2px 4px
     ), 
-    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%), url("path_to_image");
+    linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+}
+
+@media (prefers-color-scheme: light){
+    :root{
+        --main-color: #fff;
+        --main-text-color: #000;
+        --floppy-color: #000;
+        --heart-color: #000;
+        --sparks: red;
+        --contour: #000;
+        --core-hover: #000;
+        --button-text-color: #fff;
+        --like-heart-color: #ff0000;
+        --heart-contour-color: #000;
+        --font-family: "Press Start 2P";
+        --second-family: "Inter";
+        --gradient: repeating-linear-gradient(
+            to bottom,
+            #a1a1a1 0 2px,
+            transparent 2px 4px
+        ),
+        repeating-linear-gradient(
+            to right,
+            #a1a1a1 0 2px,
+            transparent 2px 4px
+        ), 
+        linear-gradient(180deg, #e7e7e7 0%, #1a1a1a 100%);
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --main-color: #000;
+        --main-text-color: #00cc14;
+        --floppy-color: #00cc14;
+        --sparks: red;
+        --core-hover: #00cc14;
+        --like-heart-color: red;
+        --contour: #00cc14;
+        --font-family: "Press Start 2P";
+        --button-text-color: #00cc14;
+        --second-family: "Inter";
+        --gradient: repeating-linear-gradient(
+            to bottom,
+            #000 0 2px,
+            transparent 2px 4px
+        ),
+        repeating-linear-gradient(
+            to right,
+            #000 0 2px,
+            transparent 2px 4px
+        ), 
+        linear-gradient(180deg, #007f0c 0%, #004306 100%);
+}
 }
