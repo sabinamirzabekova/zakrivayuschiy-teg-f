@@ -231,6 +231,7 @@
 .card__like-button{
   background-color: var(--main-color);
   min-width: 130px;
+  margin-bottom: 3px;
 }
 
 .button__text {
@@ -367,11 +368,22 @@
     width: 100%;
   }
   .section__text{
-    padding: 25px 26px 25px 25px;
+    padding: 25px 27px;
     gap: 27px;
   }
+  .section__content{
+    padding: 25px 27px 20px 27px;
+  }
   .section__button{
-    margin: 0 25px 20px;
+    margin: 0px 25px 20px;
+
+  }
+  .card__icon-button{
+    margin: 0;
+  }
+  .card__like-button{
+    padding: 0;
+    margin-bottom: 5px;
   }
   .text-above-image{
     inset-inline-end: 11px;
